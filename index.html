@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code for the Kingdom Nashville 2018</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=0">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <style>
+        body {
+            color: #10161A;
+            font-family: 'Barlow', sans-serif;
+        }
+
+        p {
+            color: #26313C;
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin: 0 auto 1em;
+            max-width: 40rem;
+        }
+
+        header {
+            background: #fff url(bg_website.jpg) top center no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 4rem 1rem;
+        }
+
+        header h1 img {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        header p,
+        .details li {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin: 0 auto 1rem;
+            max-width: 32em;
+        }
+
+        header p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.32);
+            box-shadow: 0 0 8px rgba(16, 22, 26, .04);
+            order: -1;
+            transition: all .25s ease;
+        }
+
+        nav:hover {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 0 16px rgba(16, 22, 26, .08);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            background: transparent;
+            border-bottom: 4px solid transparent;
+            color: #483A75;
+            display: block;
+            padding: 1.5rem 1.25rem 1.375rem;
+            text-decoration: none;
+            transition: all .25s ease;
+        }
+
+        nav a:hover {
+            border-bottom-color: rgba(72, 58, 117, .5);
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0 auto 5rem;
+            text-align: center;
+        }
+
+        h2 span {
+            border-bottom: 8px solid #F8E71C;
+            display: inline-block;
+            padding-bottom: 1rem;
+        }
+
+        section {
+            padding: 5rem 1rem;
+        }
+
+        .register-btn {
+            background: #F8E71C;
+            border-radius: 4px;
+            box-shadow: 0 2px 0 rgba(228, 188, 37, .8);
+            color: #10161A;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 2.5rem;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+        }
+
+        .larger {
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .sponsor {
+            margin-bottom: 5rem;
+            text-align: center;
+        }
+
+        .sponsor img {
+            max-width: 400px;
+        }
+
+        .sponsor:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .details {
+            display: flex;
+            list-style: none;
+            margin: 0 auto 2rem;
+            padding: 0;
+            text-align: center;
+            max-width: 45rem;
+            width: 100%;
+        }
+
+        .details li {
+            padding: .5rem 1rem;
+            width: 100%;
+        }
+
+        .details span {
+            color: #483A75;
+            display: block;
+            font-size: 0.75em;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        #schedule p,
+        #sponsors p {
+            text-align: center;
+        }
+
+        #schedule .table-responsive {
+            width: 50%;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 2.2em;
+        }
+
+        #sponsors ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        #sponsors .logo-images li {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        #register {
+            padding: 5rem 0;
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70513007-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-70513007-1');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="logo-cftk.svg" alt="Code for the Kingdom Nashville">
+        </h1>
+        <ul class="details">
+            <li>
+                <span>Date</span> February 9-11, 2018</li>
+            <li>
+                <span>Location</span> LifeWay Headquarters</li>
+        </ul>
+        <p>Join
+            <b>developers</b>,
+            <b>designers</b>,
+            <b>entrepreneurs</b>, and
+            <b>innovators</b> from around Nashville for a weekend hackathon dedicated to creating technology for good using
+            the talents and passions that God has given us.</p>
+        <p>
+            <a href="#register" class="register-btn">Register Now</a>
+        </p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#schedule">Schedule</a>
+                </li>
+                <li>
+                    <a href="#sponsors">Sponsors</a>
+                </li>
+                <li>
+                    <a href="#apis">APIs</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#directions">Directions</a>
+                </li>
+                <li>
+                    <a href="#register">Register</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>
+            <span>About</span>
+        </h2>
+        <p class="larger">Code for the Kingdom is a weekend Hackathon series and ongoing ecosystem where the challenges confronting our communities,
+            our society, our families, and our spiritual lives are tackled from a Christian perspective.</p>
+        <p>The movement hosts weekend gatherings in different cities where developers, designers, ideators and others collaborate
+            to advance common good and serve God’s Kingdom. C4TK hackathons have gathered thousands of technologists to create
+            hundreds of projects for good.</p>
+        <p>Our goal is that the weekend would leverage the skills and insights of our city’s entrepreneurs, designers, and technologists
+            to foster an innovative culture with Christian values that extends far beyond the weekend itself. We hope lasting
+            community and change are a result of our coming together.</p>
+    </section>
+
+    <section id="schedule">
+        <h2>
+            <span>Schedule</span>
+        </h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            <h3>Friday, March 10th</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5:30 PM : Doors Open</td>
+                    </tr>
+                    <tr>
+                        <td>6 - 7 PM : Dinner and Networking</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 - 7:25 PM : Welcome &amp; Review Format</td>
+                    </tr>
+                    <tr>
+                        <td>7:25 - 7:35 PM : API Presentations</td>
+                    </tr>
+                    <tr>
+                        <td>7:35 - 7:50 PM : Review Official Challenges</td>
+                    </tr>
+                    <tr>
+                        <td>7:50 - 8:25 PM : Open Floor - Pitch Your Own Project</td>
+                    </tr>
+                    <tr>
+                        <td>8:25 - 11:59 PM : Team Formation / Start Creating</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            <h3>Saturday, March 11th</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12:00 AM - 11:59 PM : Creating</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 - 9:00 AM : Breakfast</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 1:00 PM : Lunch</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 - 5:00 PM : Optional Workshop - Creating a ministry project using technologies like React, React
+                            Native and Serverless </td>
+                    </tr>
+                    <tr>
+                        <td>6:00 - 7:00 PM : Dinner</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            <h3>Sunday, March 12th</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12:00 AM - 2:00 PM : Creating</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 - 9:00 AM : Breakfast</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 - 10:00 AM :
+                            <br/> Sunday Service and Worship</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 1:00 PM : Lunch</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 PM : Pencils Down / Stop Creating</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 - 2:30 PM : Final Presentation Prep</td>
+                    </tr>
+                    <tr>
+                        <td>2:30 - 3:15 PM : Finished Project Presentations</td>
+                    </tr>
+                    <tr>
+                        <td>3:30 - 4:00 PM : Judging Projects</td>
+                    </tr>
+                    <tr>
+                        <td>4:00 - 4:30 PM : Awards Presentation / Closing Remarks</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5 class="small">* Schedule Subject to Change.</h5>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="sponsors">
+        <h2>
+            <span>Sponsors</span>
+        </h2>
+        <ul class="logo-images">
+            <li>
+                <a href="http://tech.lifeway.com/" target="_blank">
+                    <img width="400" src="/sponsor_logos/lifeway_it.png" />
+                </a>
+            </li>
+        </ul>
+        <p>More coming soon!</p>
+    </section>
+
+    <section id="register">
+        <h2>
+            <span>Register</span>
+        </h2>
+        <div id="eventbrite-widget-container-41833604437"></div>
+
+        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+        <script type="text/javascript">
+            var exampleCallback = function () {
+                console.log('Order complete!');
+            };
+
+            window.EBWidgets.createWidget({
+                // Required
+                widgetType: 'checkout',
+                eventId: '41833604437',
+                iframeContainerId: 'eventbrite-widget-container-41833604437',
+
+                // Optional
+                iframeContainerHeight: 450,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+            });
+        </script>
+    </section>
+</body>
+
+</html>
